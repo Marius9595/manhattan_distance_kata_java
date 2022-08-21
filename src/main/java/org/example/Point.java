@@ -2,10 +2,15 @@ package org.example;
 
 public class Point {
     private int north;
-    private int south;
+    private int east;
 
-    public Point(int north, int south) {
+    public Point(int east, int north) {
         this.north = north;
-        this.south = south;
+        this.east = east;
+
+    }
+
+    public int verticalDistanceFrom(Point otherPoint) {
+        return this.north + otherPoint.north;
     }
 }
