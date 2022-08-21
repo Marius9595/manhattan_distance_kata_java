@@ -13,4 +13,8 @@ public class Point {
     public int verticalDistanceFrom(Point otherPoint) {
         return this.north + otherPoint.north;
     }
+
+    public int horizontalDistanceFrom(Point otherPoint) {
+        return this.east + otherPoint.east;
+    }
 }
