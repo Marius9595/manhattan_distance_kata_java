@@ -28,4 +28,8 @@ public class ManhattanDistanceCalculatorShould {
     public void sum_vertical_distances(){
         assertThat(calculator.calculate(new Point(0,0), new Point(0,1))).isEqualTo(1);
     }
+    @Test
+    public void sum_horizontal_distances(){
+        assertThat(calculator.calculate(new Point(0,0), new Point(1,0))).isEqualTo(1);
+    }
 }
