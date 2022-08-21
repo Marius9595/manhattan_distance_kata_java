@@ -7,7 +7,6 @@ public class Point {
     public Point(int east, int north) {
         this.north = north;
         this.east = east;
-
     }
 
     public int verticalDistanceFrom(Point otherPoint) {
@@ -15,6 +14,6 @@ public class Point {
     }
 
     public int horizontalDistanceFrom(Point otherPoint) {
-        return this.east + otherPoint.east;
+        return Math.abs(this.east) + Math.abs(otherPoint.east);
     }
 }
