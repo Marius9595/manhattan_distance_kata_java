@@ -23,6 +23,7 @@ public class ManhattanDistanceCalculatorShould {
     @Test
     public void not_calculate_distance_with_points_located_in_same_place(){
         assertThat(calculator.calculate(new Point(0,0), new Point(0,0))).isEqualTo(0);
+        assertThat(calculator.calculate(new Point(1,1), new Point(1,1))).isEqualTo(0);
     }
     @Test
     public void sum_vertical_distances(){
