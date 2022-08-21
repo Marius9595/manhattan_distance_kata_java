@@ -6,9 +6,9 @@ import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /*
-(0,0),(0,0) -> 0
-(0,0),(0,1) -> 1
-(0,0),(1,0) -> 1
+(0,0),(0,0) -> 0 ok
+(0,0),(0,1) -> 1 ok
+(0,0),(1,0) -> 1 ok
 (0,0),(1,1) -> 2
 (-1,0),(0,0) -> 1
 (-1,0),(1,0) -> 2
@@ -31,5 +31,9 @@ public class ManhattanDistanceCalculatorShould {
     @Test
     public void sum_horizontal_distances(){
         assertThat(calculator.calculate(new Point(0,0), new Point(1,0))).isEqualTo(1);
+    }
+    @Test
+    public void handle_horizontal_distance_from_an_absolute_reference(){
+        assertThat(calculator.calculate(new Point(-1,0), new Point(0,0))).isEqualTo(1);
     }
 }

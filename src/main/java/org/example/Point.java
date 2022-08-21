@@ -1,8 +1,8 @@
 package org.example;
 
 public class Point {
-    private int north;
-    private int east;
+    private final int north;
+    private final int east;
 
     public Point(int east, int north) {
         this.north = north;
