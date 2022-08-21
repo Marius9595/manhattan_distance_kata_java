@@ -41,4 +41,8 @@ public class ManhattanDistanceCalculatorShould {
     public void handle_vertical_distance_from_an_absolute_reference(){
         assertThat(calculator.calculate(new Point(0,-1), new Point(0,0))).isEqualTo(1);
     }
+    @Test
+    public void calculate_distance_from_any_two_points(){
+        assertThat(calculator.calculate(new Point(2,-4), new Point(1,3))).isEqualTo(8);
+    }
 }
