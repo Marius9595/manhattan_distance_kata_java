@@ -19,10 +19,6 @@ public class Point {
         return Math.abs(this.east - otherPoint.east);
     }
 
-    public boolean isInSamePlaceOfAs(Point otherPoint) {
-        if (this.equals(otherPoint)) return true;
-        return false;
-    }
 
     @Override
     public boolean equals(Object o) {
