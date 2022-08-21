@@ -46,3 +46,15 @@ public class ManhattanDistanceCalculatorShould {
         assertThat(calculator.calculate(new Point(2,-4), new Point(1,3))).isEqualTo(8);
     }
 }
+
+/*
+xxxx-xxxx
+xxxxxxxxx
+xxxxxxxxx
+xxx0xxxxx
+xxxxxxxxx
+xxxxxxxxx
+xxxxxxxxx
+xxxxx-xxx
+
+*/

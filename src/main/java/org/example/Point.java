@@ -12,11 +12,11 @@ public class Point {
     }
 
     public int verticalDistanceFrom(Point otherPoint) {
-        return Math.abs(this.north) + Math.abs(otherPoint.north);
+        return Math.abs(this.north - otherPoint.north);
     }
 
     public int horizontalDistanceFrom(Point otherPoint) {
-        return Math.abs(this.east) + Math.abs(otherPoint.east);
+        return Math.abs(this.east - otherPoint.east);
     }
 
     public boolean isInSamePlaceOfAs(Point otherPoint) {
